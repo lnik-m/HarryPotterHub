@@ -1,0 +1,42 @@
+@import "../styles/common";
+
+.layout {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+
+    grid-template-areas:
+        "header body"
+        "sidebar body";
+    gap: 20px;
+    padding: 20px 100px;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.body {
+    grid-area: body;
+}
+
+@media (max-width: 765px) {
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        grid-template-areas: "header"
+        "body";
+        gap: 10px;
+        padding: 10px 30px;
+    }
+    .sidebar {
+        display: none !important;
+    }
+    
+}

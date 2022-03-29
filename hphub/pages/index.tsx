@@ -1,9 +1,11 @@
+import { withLayout } from '../Layout/Layout';
 
-
-export default function Home() {
+function Home() {
   return (
-    <div>
-      hello
-    </div>
+    <>
+      Body
+    </>
   );
 }
+
+export default withLayout(Home);
