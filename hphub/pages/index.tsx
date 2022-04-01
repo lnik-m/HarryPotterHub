@@ -1,7 +1,5 @@
-
 import { MainPage } from '../components';
 import { withLayout } from '../Layout/Layout';
-
 
 const Home = () => {
   return (
