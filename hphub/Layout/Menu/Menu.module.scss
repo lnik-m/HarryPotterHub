@@ -12,11 +12,9 @@
 }
 
 .menuItem:hover {
-    background: rgb(255 255 255 / 30%);
-    box-shadow: 2px 2px 20px rgb(224 211 126 / 50%);
+    text-shadow: 2px 2px 20px rgba(255, 231, 74, 0.8);
 }
 
 .menuItem:active {
-    background: rgb(255 255 255 / 50%);
-    box-shadow: 2px 2px 20px rgb(255 255 255 / 50%);
+    text-shadow: 2px 2px 20px rgb(255, 221, 0);
 }
