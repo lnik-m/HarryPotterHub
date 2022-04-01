@@ -1,0 +1,35 @@
+@import "../../styles/common";
+
+.button {
+    width: fit-content;
+    height: fit-content;
+    padding: 1.2% 3%;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background: rgb(255 255 255 / 50%);
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 30px rgb(255 255 255 / 50%);
+}
+
+.button:active {
+    background: rgb(255 255 255 / 80%);
+    box-shadow: 2px 2px 30px rgb(255 255 255 / 50%);
+}
+
+@media (max-width: 900px) {
+    .button {
+        font-size: 0.8em;
+    }
+}

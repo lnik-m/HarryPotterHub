@@ -1,11 +1,14 @@
+
+import { MainPage } from '../components';
 import { withLayout } from '../Layout/Layout';
 
-function Home() {
+
+const Home = () => {
   return (
     <>
-      Body
+      <MainPage />
     </>
   );
-}
+};
 
 export default withLayout(Home);
