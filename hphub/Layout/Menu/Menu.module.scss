@@ -1,0 +1,22 @@
+.menu {
+    justify-self: end;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+}
+
+.menuItem {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0.3em;
+    border-radius: 0.3em;
+}
+
+.menuItem:hover {
+    background: rgb(255 255 255 / 30%);
+    box-shadow: 2px 2px 20px rgb(224 211 126 / 50%);
+}
+
+.menuItem:active {
+    background: rgb(255 255 255 / 50%);
+    box-shadow: 2px 2px 20px rgb(255 255 255 / 50%);
+}

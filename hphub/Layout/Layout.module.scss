@@ -3,11 +3,10 @@
 .layout {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr ;
-
+    grid-template-rows: auto 1fr;
     grid-template-areas:
-        "header body"
-        "sidebar body";
+        "header menu"
+        "body body";
     gap: 20px;
     padding: 20px 100px;
 }
@@ -16,27 +15,27 @@
     grid-area: header;
 }
 
-.sidebar {
-    grid-area: sidebar;
+.menu {
+    grid-area: menu;
 }
 
 .body {
     grid-area: body;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 900px) {
     .layout {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-
-        grid-template-areas: "header"
-        "body";
+        grid-template-areas:
+            "header"
+            "body";
         gap: 10px;
         padding: 10px 30px;
     }
-    .sidebar {
+
+    .menu {
         display: none !important;
     }
-    
 }

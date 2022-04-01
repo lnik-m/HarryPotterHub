@@ -1,25 +1,6 @@
-@import '../../styles/common';
+@import "../../styles/common";
 
 .header {
-	cursor: pointer;
-	align-items: center;
-}
-.menu {
-	display: none;
-}
-
-@media (max-width: 765px) {
-	.header {
-		cursor: pointer;
-
-		display: grid;
-		grid-template-columns: auto 1fr;
-		grid-template-rows: 1fr;
-		align-items: center;
-	}
-	.menu {
-		display: block;
-		justify-self: end;
-		fill: $logo;
-	}
+    align-items: center;
+    cursor: pointer;
 }
