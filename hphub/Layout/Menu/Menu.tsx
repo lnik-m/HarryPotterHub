@@ -9,7 +9,7 @@ export const Menu = ({ className }: MenuProps): JSX.Element => {
 	return (
     <nav className={cn(className, styles.menu)}>
       {MenuItems.map((m) => (
-        <Link href={m} key={m}>
+        <Link href={m} key={m} passHref>
           <a className={styles.menuItem}>{m}</a>
         </Link>
       ))}

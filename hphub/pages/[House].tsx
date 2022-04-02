@@ -33,11 +33,11 @@ export const getStaticProps: GetStaticProps = async () => {
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths: [
-		{ params: { house: 'Gryffindor' } },
-		{ params: { house: 'Slytherin' } },
-		{ params: { house: 'Hufflepuff' } },
-		{ params: { house: 'Ravenclaw' } },
-		{ params: { house: 'Other' } },
+      { params: { house: "Gryffindor".toString() } },
+      { params: { house: "Slytherin".toString() } },
+      { params: { house: "Hufflepuff".toString() } },
+      { params: { house: "Ravenclaw".toString() } },
+      { params: { house: "Other".toString() } },
     ],
     fallback: false,
   };
