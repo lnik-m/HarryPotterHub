@@ -6,10 +6,8 @@ import Link from 'next/link';
 export const Button = ( { children, link='#', className, ...props }:ButtonProps ): JSX.Element => {
 
 	return (
-		<Link href={link}>
-			<button className={cn(styles.button)}>
-				{children}			
-			</button>
-		</Link>
-	);
+    <Link href={link}>
+      <button className={cn(styles.button)}>{children}</button>
+    </Link>
+  );
 };

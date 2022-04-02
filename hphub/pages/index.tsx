@@ -1,12 +1,12 @@
 import { MainPage } from '../components';
-import { withLayout } from '../Layout/Layout';
+import Layout from '../Layout/Layout';
 
 const Home = () => {
   return (
-    <>
+    <Layout>
       <MainPage />
-    </>
+    </Layout>
   );
 };
 
-export default withLayout(Home);
+export default Home;
