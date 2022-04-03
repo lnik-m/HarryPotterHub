@@ -3,6 +3,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { MenuItems } from "../../helpers";
 import { CharacterProps } from '../../interfaces/house.interface';
 import { useRouter } from 'next/router';
+import Slider from '../../components/Slider/Slider';
 
 const House = ({ characters }: CharacterProps) => {
   const router = useRouter();
@@ -21,7 +22,8 @@ const House = ({ characters }: CharacterProps) => {
 
   return (
     <Layout>
-      <p>House is: {currentHouse}</p>
+      <Slider characters={currentCharacters} />
+      {currentHouse != "Other" && <p>House is: {currentHouse}</p>}
       {currentCharacters && currentCharacters.map((i) => <p>{i.name}</p>)}
     </Layout>
   );
