@@ -2,7 +2,7 @@ import { MenuProps } from './Menu.props';
 import styles from './Menu.module.scss';
 import cn from 'classnames';
 import Link from 'next/link';
-import { MenuItems } from '../../helpers';
+import { MenuItems } from '../../helpers/helpers';
 
 export const Menu = ({ className }: MenuProps): JSX.Element => {
 	return (
@@ -12,7 +12,7 @@ export const Menu = ({ className }: MenuProps): JSX.Element => {
       </Link>
 
       {MenuItems.map((m) => (
-        <Link href={m.route} key={m.id} passHref>
+        <Link href={`/${m.route}`} key={m.id} passHref>
           <a className={styles.menuItem}>{m.name}</a>
         </Link>
       ))}

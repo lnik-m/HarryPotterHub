@@ -9,5 +9,6 @@ export enum MenuItemCategory {
 export interface MenuItem {
 	route: string,
 	name: string,
-	id: MenuItemCategory
+	id: MenuItemCategory,
+	items: string[]
 }

@@ -1,6 +1,6 @@
 import Layout from '../../Layout/Layout';
 import { GetStaticProps, GetStaticPaths } from "next";
-import { MenuItems } from "../../helpers";
+import { MenuItems } from "../../helpers/helpers";
 import { CharacterProps } from '../../interfaces/house.interface';
 import { useRouter } from 'next/router';
 import Slider from '../../components/Slider/Slider';
@@ -22,9 +22,8 @@ const House = ({ characters }: CharacterProps) => {
 
   return (
     <Layout>
-      <Slider characters={currentCharacters} />
       {currentHouse != "Other" && <p>House is: {currentHouse}</p>}
-      {currentCharacters && currentCharacters.map((i) => <p>{i.name}</p>)}
+      <Slider characters={currentCharacters} />
     </Layout>
   );
 };
