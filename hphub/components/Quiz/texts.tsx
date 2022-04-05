@@ -12,10 +12,11 @@ export const TextGryffindor = () => {
 export const TextSlytherin = () => {
   return (
     <>
-      "You might belong in Gryffindor,
-      <br /> Where dwell the brave at heart,
-      <br /> Their daring, nerve, and chivalry
-      <br /> Set Gryffindors apart"
+      "Or perhaps in Slytherin,
+      <br />
+      You'll make your real friends,
+      <br /> Those cunning folk use any means,
+      <br /> To achieve their ends."
     </>
   );
 };
