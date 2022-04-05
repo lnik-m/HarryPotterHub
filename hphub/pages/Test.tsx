@@ -1,9 +1,10 @@
+import Quiz from '../components/Quiz/Quiz';
 import Layout from '../Layout/Layout';
 
 const Test = () => {
   return (
     <Layout>
-      Test page
+      <Quiz />     
     </Layout>
   );
 };

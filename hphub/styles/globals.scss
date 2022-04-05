@@ -2,6 +2,8 @@
 
 html,
 body {
+    overflow-x: hidden;
+    height: 100%;
     margin: 0;
     padding: 0;
     color: white;
@@ -10,14 +12,11 @@ body {
     background-size: cover;
     font-family: Mukta, sans-serif;
     font-size: 20px;
-    height: 100%;
 
-    overflow-x: hidden;
     ::-webkit-scrollbar {
         width: 0;
     }
 }
-
 
 a {
     text-decoration: none;

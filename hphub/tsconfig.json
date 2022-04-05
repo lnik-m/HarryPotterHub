@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "svg.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
   ],
   "exclude": [
     "node_modules"
