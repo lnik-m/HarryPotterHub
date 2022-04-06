@@ -1,41 +1,53 @@
 @import "../styles/common";
 
 .layout {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-        "header menu"
-        "body body";
-    gap: 20px;
-    padding: 20px 100px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "header menu"
+    "body body";
+  gap: 20px;
+  padding: 20px 100px 0;
+  grid-auto-rows: 0;
+  overflow-y: hidden;
 }
 
 .header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .menu {
-    grid-area: menu;
+  grid-area: menu;
+}
+
+.sidebar {
+    display: none !important;
 }
 
 .body {
-    grid-area: body;
+  grid-area: body;
 }
 
 @media (max-width: 900px) {
-    .layout {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr;
-        grid-template-areas:
-            "header"
-            "body";
-        gap: 10px;
-        padding: 10px 30px;
-    }
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "header sidebar"
+      "body body";
+    gap: 10px;
+    padding: 10px 30px;
+    align-items: center;
+  }
 
-    .menu {
-        display: none !important;
-    }
+  .menu {
+    display: none !important;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    display: block;
+  }
 }

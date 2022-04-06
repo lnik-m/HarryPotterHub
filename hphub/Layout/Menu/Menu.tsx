@@ -7,12 +7,12 @@ import { MenuItems } from '../../helpers/helpers';
 export const Menu = ({ className }: MenuProps): JSX.Element => {
 	return (
     <nav className={cn(className, styles.menu)}>
-      <Link href={`/Test`} key={`Test`}>
+      <Link href={`/Test`} key={`Test1`}>
         <a className={styles.menuItem}>Test</a>
       </Link>
 
-      {MenuItems.map((m) => (
-        <Link href={`/${m.route}`} key={m.id} passHref>
+      {MenuItems.map((m, index) => (
+        <Link href={`/${m.route}`} key={m.id+index} passHref>
           <a className={styles.menuItem}>{m.name}</a>
         </Link>
       ))}

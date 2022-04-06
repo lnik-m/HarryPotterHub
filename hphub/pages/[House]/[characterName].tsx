@@ -3,6 +3,7 @@ import { MenuItems } from '../../helpers/helpers';
 import Layout from '../../Layout/Layout';
 import { useRouter } from 'next/router';
 import { CharacterProps } from '../../interfaces/house.interface';
+import { CharacterPage } from '../../components';
 
 const Character = ({characters}: CharacterProps) => {
 	const router = useRouter();
@@ -12,7 +13,7 @@ const Character = ({characters}: CharacterProps) => {
   
 	return (
     <Layout>
-      It is a {characterName} page, house is {House}, actor is {currentCharacter?.actor}
+      <CharacterPage character={currentCharacter} />
     </Layout>
   );
 };

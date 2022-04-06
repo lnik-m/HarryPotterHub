@@ -49,7 +49,7 @@ const Quiz = () => {
                 className={cn(styles.answer, {
                   [styles.currentAnswer]: currentAnswer == index,
                 })}
-                key={index}
+                key={ans+index}
                 onClick={() => {
                   setCurrentAnswer((currentAnswer = index));
                 }}
