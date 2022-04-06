@@ -4,12 +4,12 @@ import cn from 'classnames';
 import HPLogo from './HPlogo.svg';
 import Link from 'next/link';
 
-export const Header = ({ className, ...props }: HeaderProps): JSX.Element => {
+export const Header = ({ className }: HeaderProps): JSX.Element => {
 
 	return(
 		<div className={cn(className, styles.header)}>
 			<Link href='/'>
-				<HPLogo />
+				<HPLogo className={styles.logo} />
 			</Link>
 		</div>
 	);
