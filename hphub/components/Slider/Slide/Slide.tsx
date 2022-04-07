@@ -11,7 +11,7 @@ const Slide = ({ name, house, image }: Character) => {
       <div className={styles.container}>
         {image != undefined && image != "" && (
           <div className={styles.image}>
-            <Image src={image} width="300" height="400" />
+            <Image src={image} alt={name} width="300" height="400" />
           </div>
         )}
         <div className={styles.name}>{name}</div>

@@ -22,8 +22,9 @@ const House = ({ characters }: CharacterProps) => {
 
   return (
     <Layout>
-      {currentHouse != "Other" && <p>House is: {currentHouse}</p>}
+      {currentHouse != "Other" && <h2>Welcome to {currentHouse}!</h2>}
       <Slider characters={currentCharacters} />
+      <p>Slide to see more characters {`->`}</p>
     </Layout>
   );
 };
