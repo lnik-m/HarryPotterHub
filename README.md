@@ -4,6 +4,7 @@ It is a pet-project, gallery about Harry Potter fandom. There you can find sorti
 ## Built with
 * Next.js
 * React
+* TypeScript
 * SASS/SCSS
 * API: https://hp-api.herokuapp.com/
 
