@@ -3,7 +3,7 @@ import { ButtonProps } from './Button.props';
 import styles from './Button.module.scss';
 import Link from 'next/link';
 
-export const Button = ( { children, link='#', className, ...props }:ButtonProps ): JSX.Element => {
+export const Button = ( { children, link='#' }:ButtonProps ): JSX.Element => {
 
 	return (
     <Link href={link}>

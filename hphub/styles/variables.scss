@@ -1,5 +1,26 @@
-$logo: #FFF;
-$griffindor: #A21312;
-$slytherin: #1E821C;
-$ravenclaw: #0691BC;
-$hufflepuff: #E2BA0E;
+%center-items {
+    justify-items: center;
+    align-items: center;
+}
+
+%button {
+    width: fit-content;
+    height: fit-content;
+    padding: 1% 3%;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    background: rgb(255 255 255 / 50%);
+    font-size: 0.9em;
+    font-weight: 600;
+    line-height: 1.8em;
+}
+
+%shadow {
+    box-shadow: 2px 2px 30px rgb(255 255 255 / 50%);
+}

@@ -1,11 +1,13 @@
+@import "../../styles/common";
+
 .quiz {
     display: grid;
-    gap: 20px;
-    margin: 0 auto;
-    color: black;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 5);
     grid-template-areas: "score" "question" "answers" "next";
+    gap: 20px;
+    margin: 0 auto;
+    color: black;
     justify-items: center;
 }
 
@@ -14,7 +16,6 @@
     width: fit-content;
     height: fit-content;
     padding: 0.3em;
-    color: 000;
     color: white;
     background: rgb(255 255 255 / 50%);
     font-size: 18px;
@@ -30,20 +31,18 @@
     min-height: 60px;
     padding: 0.3em;
     color: white;
-    background-color: #142B3E;
+    background: #142B3E;
     font-size: 1.2rem;
     grid-area: question;
     justify-self: center;
 }
 
 .answers {
-    display: grid;
-    gap: 20px;
-    align-items: center;
     grid-area: answers;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    justify-items: center;
+    gap: 20px;
     color: #142B3E;
 
     .answer {
@@ -57,50 +56,40 @@
 
     .answer:hover {
         transition-duration: 0.3s;
-        box-shadow: 2px 2px 20px rgb(255 255 255 / 50%);
+
+        @extend %shadow;
     }
 
     .currentAnswer {
         outline: 5px solid #275275;
     }
+
+    @extend %center-items;
 }
 
 .nextButton {
     grid-area: next;
-    width: fit-content;
-    height: fit-content;
-    padding: 1% 3%;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-align: center;
-    text-align: center;
-    letter-spacing: 0.15em;
-    color: white;
-    border: none;
-    border-radius: 100px;
-    outline: none;
-    background: rgb(255 255 255 / 50%);
-    font-size: 0.9em;
-    font-weight: 600;
-    line-height: 1.8em;
+
+    @extend %button;
 }
 
 .nextButton:hover {
-    box-shadow: 2px 2px 30px rgb(255 255 255 / 50%);
+    @extend %shadow;
 }
 
 .nextButton:active {
     background: rgb(255 255 255 / 80%);
-    box-shadow: 2px 2px 30px rgb(255 255 255 / 50%);
+
+    @extend %shadow;
 }
 
 .results {
     display: grid;
+    gap: 20px;
     height: fit-content;
     text-align: center;
-    color: white;
-    gap: 20px;
     justify-items: center;
+    color: white;
 
     .resultsTitle {
         font-size: 1.6rem;
@@ -114,8 +103,8 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr, 4);
-        justify-items: center;
-        align-items: center;
+
+        @extend %center-items;
     }
 
     .nextButton {

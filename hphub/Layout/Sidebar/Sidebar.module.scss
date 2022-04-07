@@ -1,29 +1,29 @@
 .sidebar {
-	width: 45%;
-	background-color: black;
-	color: white;
-	height: 100%;
-	padding: 2%;
+    width: 45%;
+    height: 100%;
+    padding: 2%;
+    color: white;
+    background-color: black;
 }
 
 .closed {
-	display: none;
+    display: none;
 }
 
-.opened{
-	display: block;
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 10;
+.opened {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    display: block;
 }
 
 .top {
-	border-bottom: solid 2px white;
+    border-bottom: solid 2px white;
 }
 
 .menu {
-	display: grid;
+    display: grid;
     justify-items: center;
     letter-spacing: 0.15em;
     font-weight: 800;
@@ -31,9 +31,9 @@
 
 .menuItem {
     display: block;
-	text-align: center;
     margin-left: 1em;
     padding: 0.3em;
+    text-align: center;
     border-radius: 0.3em;
 }
 
@@ -45,9 +45,8 @@
     text-shadow: 2px 2px 20px rgb(255 221 0);
 }
 
-
 @media (max-width: 500px) {
-	.sidebar {
-		width: 60%;
-	}
+    .sidebar {
+        width: 60%;
+    }
 }
